@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from communication.core.models import Addressee, Scheduling
 
 
