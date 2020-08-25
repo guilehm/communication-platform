@@ -52,7 +52,7 @@ class Scheduling(models.Model):
     def __str__(self):
         return f'Scheduling #{self.id} ({self.type}) ({self.addressee.name or ""})'
 
-    def _validate_type(self):
+    def _validate_communication_type(self):
         error_message = 'Addressee {information} is required for this communication type'
         if self.type in (self.TYPE_SMS, self.TYPE_WHATSAPP) and not self.addressee.mobile_number:
             raise ValidationError(error_message.format(information='mobile number'))
@@ -62,5 +62,5 @@ class Scheduling(models.Model):
             raise ValidationError(error_message.format(information='email'))
 
     def save(self, *args, **kwargs):
-        self._validate_type()
+        self._validate_communication_type()
         super().save(*args, **kwargs)
