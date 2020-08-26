@@ -10,6 +10,8 @@ django = "*"
 isort = "*"
 flake8 = "*"
 pytest-django = "*"
+djangorestframework = "*"
+drf-yasg = "*"
 
 [requires]
 python_version = "3.8"
