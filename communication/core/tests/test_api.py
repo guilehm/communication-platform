@@ -61,9 +61,8 @@ class TestSchedulingViews:
                 "id": addressee.id,
                 "name": "Frodo Baggins"
             },
-            "message": "Bilbo does not know this but part of the reason why "
-                       "Lobelia Sackville-Baggins nee Bracegirdle was so keen to have Bag End was "
-                       "because she’d always wanted to marry Bilbo instead of his cousin Otho",
+            "message": "Bilbo was not an ordinary hobbit. His mother was Belladona Took, "
+                       "and they say that Tooks look 'fairy' as if they had elven blood in them",
             "sendingTime": "2020-08-30T02:05:00.472Z",
             "type": "email",
             "sent": False
