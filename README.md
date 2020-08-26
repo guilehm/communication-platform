@@ -89,7 +89,12 @@ Now the server is running and you may access the app at this url: [http://localh
 ```bash
 make test
 ```
-
+## Admin
+If you want to see the admin I've created, create your superuser
+```bash
+make superuser
+```
+- Admin [http://localhost:8000/admin/](http://localhost:8000/admin/)
 
 ## Containers
 - Stopping containers
@@ -118,6 +123,11 @@ Create the virtual environment
 
 ```bash
 pipenv install
+```
+
+Activate the virtual environment
+```bash
+pipenv shell
 ```
 
 Edit your `.env` file and set the `DATABASE_URL` environment variable for your local database
@@ -151,8 +161,12 @@ Start server
 python manage.py runserver
 ```
 
-### Extra
+Running tests
+```bash
+pytest -vv
+```
 
+### Extra
 
 The entire process of developing this project is documented on Github Issues and Pull Requests.
     
