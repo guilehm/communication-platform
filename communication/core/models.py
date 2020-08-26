@@ -6,9 +6,9 @@ from django.db import models
 
 class Addressee(models.Model):
     name = models.CharField(max_length=256, null=True, blank=True)
-    email = models.EmailField(max_length=200, null=True, blank=True)
-    mobile_number = models.CharField(max_length=100, blank=True, null=True)
-    device_token = models.CharField(max_length=255, null=True, blank=True)
+    email = models.EmailField(max_length=256, null=True, blank=True)
+    mobile_number = models.CharField(max_length=128, blank=True, null=True)
+    device_token = models.CharField(max_length=256, null=True, blank=True)
 
     date_added = models.DateTimeField(auto_now_add=True)
     date_changed = models.DateTimeField(auto_now=True)
