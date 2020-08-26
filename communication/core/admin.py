@@ -7,6 +7,7 @@ class AddresseeSchedulingInline(admin.StackedInline):
     model = Scheduling
     extra = 0
 
+
 @admin.register(Addressee)
 class AddresseeAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'mobile_number', 'device_token')
