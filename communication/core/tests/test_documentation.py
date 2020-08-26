@@ -1,13 +1,4 @@
-import pytest
-from django.test import Client
-
-
 class TestDocumentation:
-
-    @pytest.fixture
-    def client(self):
-        client = Client()
-        return client
 
     def test_documentation_redoc_response(self, client):
         response = client.get('/redoc/')
